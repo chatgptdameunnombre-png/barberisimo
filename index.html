@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e0e0e">
+
+<!-- Seguridad: política de contenido (solo permite cargar recursos de fuentes conocidas) -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; frame-src https://maps.google.com https://www.google.com https://maps.gstatic.com; connect-src 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Barberisimo · Zapopan · Cortes a tijera</title>
+<meta name="description" content="Barbería especializada en Zapopan. Corte a tijera, barba con vapor y aromaterapia. Av. Netzahualcóyotl 410-4, Cd del Sol. Agenda por WhatsApp.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Barberisimo">
+<meta name="geo.region" content="MX-JAL">
+<meta name="geo.placename" content="Zapopan, Jalisco">
+
+<!-- ⚠️ CONFIG: cambia esta URL por tu dominio real cuando lo tengas (aparece aquí y en og:url, og:image, twitter:image y el JSON-LD de abajo) -->
+<link rel="canonical" href="https://barberisimo.mx/">
+
+<!-- Para compartir bonito en WhatsApp / Facebook / Instagram -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Barberisimo">
+<meta property="og:title" content="Barberisimo · Barbería especializada en Zapopan">
+<meta property="og:description" content="Cortes a tijera, barba con vapor y aromaterapia. Agenda por WhatsApp. Cd del Sol, Zapopan, Jal.">
+<meta property="og:url" content="https://barberisimo.mx/">
+<meta property="og:image" content="https://barberisimo.mx/assets/fachada.webp">
+<meta property="og:image:alt" content="Barberisimo · Cd del Sol, Zapopan">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Barberisimo · Barbería especializada en Zapopan">
+<meta name="twitter:description" content="Cortes a tijera, barba con vapor y aromaterapia. Agenda por WhatsApp.">
+<meta name="twitter:image" content="https://barberisimo.mx/assets/fachada.webp">
+
+<link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+<link rel="apple-touch-icon" href="assets/logo.jpg">
+
+<!-- Datos estructurados para Google (ficha local con estrellas, horarios y mapa) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Barberisimo",
+  "image": "https://barberisimo.mx/assets/fachada.webp",
+  "@id": "https://barberisimo.mx/",
+  "url": "https://barberisimo.mx/",
+  "telephone": "+523327674349",
+  "priceRange": "$$",
+  "currenciesAccepted": "MXN",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Netzahualcóyotl 410-4",
+    "addressLocality": "Zapopan",
+    "addressRegion": "Jalisco",
+    "postalCode": "45050",
+    "addressCountry": "MX"
+  },
+  "hasMap": "https://maps.app.goo.gl/bTu1Bq9VwmhsEJw2A",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "10:15",
+      "closes": "19:45"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:15",
+      "closes": "17:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/is.barberisimo/",
+    "https://www.facebook.com/profile.php?id=61584808366025"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "8"
+  },
+  "makesOffer": [
+    { "@type": "Offer", "priceCurrency": "MXN", "price": "289", "itemOffered": { "@type": "Service", "name": "Corte" } },
+    { "@type": "Offer", "priceCurrency": "MXN", "price": "289", "itemOffered": { "@type": "Service", "name": "Barba" } },
+    { "@type": "Offer", "priceCurrency": "MXN", "price": "349", "itemOffered": { "@type": "Service", "name": "Barba 3M" } }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;1,6..96,400;1,6..96,500&family=Cormorant+Garamond:ital,wght@1,400;1,500&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --carbon: #0e0e0e;
+    --carbon-mid: #131313;
+    --carbon-soft: #1a1a1a;
+    --carbon-line: rgba(255,255,255,.07);
+    --carbon-line-strong: rgba(255,255,255,.13);
+
+    --olive: #8c8c3a;
+    --olive-bright: #c9c96a;
+    --olive-soft: #d8da7a;
+    --olive-muted: rgba(140,140,58,.5);
+
+    --white: #ffffff;
+    --white-soft: #e8e6df;
+    --gray: #807d75;
+    --gray-dim: #4a4845;
+
+    --f-display: "Bodoni Moda", "Times New Roman", serif;
+    --f-italic: "Cormorant Garamond", "Bodoni Moda", serif;
+    --f-body: "Manrope", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+    --pad-x: clamp(20px, 5vw, 112px);
+    --pad-y: clamp(120px, 17vw, 248px);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth;background:var(--carbon);scroll-padding-top:96px}
+  body{
+    background:var(--carbon);
+    color:var(--white-soft);
+    font-family:var(--f-body);
+    font-weight:400;
+    font-size:17px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  img,video{display:block;max-width:100%}
+  figure{margin:0}
+  ::selection{background:var(--olive);color:#000}
+
+  /* ---------- Topbar ---------- */
+  .topbar{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px var(--pad-x);
+    background:linear-gradient(to bottom, rgba(14,14,14,.92), rgba(14,14,14,0));
+    backdrop-filter:saturate(120%) blur(8px);
+    -webkit-backdrop-filter:saturate(120%) blur(8px);
+    transition:background .25s ease;
+  }
+  .topbar.scrolled{background:rgba(14,14,14,.96);border-bottom:1px solid var(--carbon-line)}
+  .tb-brand{
+    display:flex;align-items:center;gap:11px;
+    font-family:var(--f-display);font-weight:500;letter-spacing:.14em;font-size:15px;
+    text-transform:uppercase;color:var(--white);
+  }
+  .tb-brand img{width:30px;height:30px;border-radius:50%}
+  .topbar .tb-right{
+    display:flex;align-items:center;gap:clamp(16px,2vw,30px);
+    font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);
+  }
+  .topbar .tb-right a{transition:color .25s ease}
+  .topbar .tb-right a:hover{color:var(--olive-bright)}
+  @media (max-width:760px){
+    .topbar .tb-right{display:none}
+  }
+
+  /* ---------- Reusable ---------- */
+  section{position:relative}
+  .eyebrow{
+    font-family:var(--f-mono);
+    font-size:11px;letter-spacing:.32em;text-transform:uppercase;
+    color:var(--olive);
+    display:inline-flex;align-items:center;gap:14px;
+  }
+  .eyebrow::before{content:"";display:inline-block;width:32px;height:1px;background:var(--olive)}
+  .h-display{
+    font-family:var(--f-display);
+    font-weight:500;
+    letter-spacing:-.02em;
+    line-height:.96;
+    color:var(--white);
+    text-wrap:balance;
+    margin:0;
+  }
+  .italic{font-family:var(--f-italic);font-style:italic;color:var(--olive-bright);font-weight:400}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:12px;
+    padding:18px 30px;
+    background:var(--olive);
+    color:#0e0e0e;
+    font-family:var(--f-body);
+    font-weight:600;font-size:13px;
+    letter-spacing:.12em;text-transform:uppercase;
+    border:1px solid var(--olive);
+    cursor:pointer;
+    transition:transform .35s cubic-bezier(.2,.7,.2,1), background .25s ease, box-shadow .35s ease, color .25s ease, border-color .25s ease;
+    will-change:transform;
+  }
+  .btn:hover{
+    transform:translateY(-3px);
+    background:var(--olive-bright);border-color:var(--olive-bright);
+    box-shadow:0 20px 44px -18px rgba(201,201,106,.5);
+  }
+  .btn .ico{width:18px;height:18px;flex:0 0 18px}
+  .btn.ghost{background:transparent;color:var(--white);border-color:var(--carbon-line-strong)}
+  .btn.ghost:hover{color:var(--olive-bright);border-color:var(--olive);background:transparent;box-shadow:none}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:100vh;min-height:100dvh;
+    padding:120px var(--pad-x) 80px;
+    display:flex;flex-direction:column;justify-content:center;align-items:center;
+    text-align:center;
+    background:
+      radial-gradient(ellipse at 50% 40%, rgba(140,140,58,.10), transparent 60%),
+      var(--carbon);
+    position:relative;overflow:hidden;
+  }
+  .hero .logo{
+    width:clamp(110px, 14vw, 168px);
+    height:clamp(110px, 14vw, 168px);
+    border-radius:50%;
+    margin-bottom:clamp(36px, 5vw, 64px);
+    box-shadow:0 30px 80px -30px rgba(201,201,106,.4), 0 0 0 1px var(--carbon-line);
+  }
+  .hero h1{
+    font-size:clamp(52px, 9.5vw, 152px);
+    line-height:.86;letter-spacing:-.035em;
+    font-weight:500;
+    margin:0 0 28px;
+    display:flex;align-items:baseline;justify-content:center;gap:0;flex-wrap:wrap;
+  }
+  .hero h1 .word{display:inline-block}
+  .hero .tag{
+    font-family:var(--f-italic);font-style:italic;
+    color:var(--olive-bright);
+    font-size:clamp(20px, 2.5vw, 28px);
+    line-height:1.4;
+    max-width:32ch;
+    margin:0 auto 48px;
+  }
+  .hero .ctas{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  .hero .scroll-cue{
+    position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+    font-family:var(--f-mono);font-size:10px;letter-spacing:.32em;color:var(--gray-dim);
+    text-transform:uppercase;display:flex;flex-direction:column;align-items:center;gap:12px;
+  }
+  .hero .scroll-cue::after{
+    content:"";width:1px;height:32px;background:linear-gradient(to bottom, var(--gray-dim), transparent);
+    animation:scrollPulse 2.2s ease-in-out infinite;
+  }
+  @keyframes scrollPulse{
+    0%,100%{opacity:.3;transform:scaleY(.8)}
+    50%{opacity:1;transform:scaleY(1)}
+  }
+
+  /* ---------- FRASE DEL NEGOCIO ---------- */
+  .frase{
+    padding:var(--pad-y) var(--pad-x);
+    border-top:1px solid var(--carbon-line);
+    text-align:center;
+    display:flex;flex-direction:column;align-items:center;
+  }
+  .frase .eyebrow{margin-bottom:clamp(40px, 6vw, 72px)}
+  .frase p{
+    margin:0;
+    font-family:var(--f-display);font-weight:400;
+    font-size:clamp(24px, 3vw, 46px);
+    line-height:1.28;letter-spacing:-.01em;
+    color:var(--white);
+    max-width:min(92%, 1100px);
+    text-wrap:balance;
+  }
+  .frase p em{font-family:var(--f-italic);font-style:italic;color:var(--olive-bright);font-weight:500}
+  .frase .sign{
+    margin-top:clamp(40px, 6vw, 72px);
+    font-family:var(--f-mono);font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gray);
+  }
+
+  /* ---------- Section frame ---------- */
+  .section{
+    padding:var(--pad-y) var(--pad-x);
+    border-top:1px solid var(--carbon-line);
+  }
+  .section .head{
+    display:flex;flex-direction:column;align-items:center;text-align:center;
+    margin-bottom:clamp(56px, 8vw, 100px);
+  }
+  .section .head .eyebrow{margin-bottom:22px}
+  .section .head .eyebrow::before{display:none}
+  .section .head h2{
+    margin:0;
+    font-size:clamp(40px, 5.5vw, 84px);
+    max-width:18ch;
+  }
+  .section .head .divider{width:60px;height:1px;background:var(--olive-muted);margin-top:28px}
+  .section-num{
+    position:absolute;top:32px;right:var(--pad-x);
+    font-family:var(--f-mono);font-size:11px;letter-spacing:.32em;color:var(--gray-dim);
+  }
+
+  /* ---------- SERVICIOS (lista minimalista) ---------- */
+  .serv-list{border-top:1px solid var(--carbon-line)}
+  .serv-row{
+    display:grid;
+    grid-template-columns:auto 1fr auto auto;
+    align-items:center;
+    gap:clamp(20px, 4vw, 56px);
+    padding:clamp(28px, 4vw, 48px) 0;
+    border-bottom:1px solid var(--carbon-line);
+    position:relative;
+    transition:padding-left .4s cubic-bezier(.2,.7,.2,1);
+  }
+  .serv-row:hover{padding-left:16px}
+  .serv-row:hover .name,.serv-row:hover .name .desc,.serv-row:hover .num{color:var(--olive-bright)}
+  .serv-row:hover .price{color:var(--olive-soft)}
+  .serv-row .num{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;color:var(--olive)}
+  .serv-row .name{
+    font-family:var(--f-display);font-weight:500;
+    font-size:clamp(30px, 4.5vw, 60px);
+    color:var(--white);letter-spacing:-.02em;line-height:1;
+    display:flex;align-items:baseline;gap:.3em;flex-wrap:wrap;
+  }
+  .serv-row .name .desc{
+    font-family:var(--f-italic);font-style:italic;font-weight:400;
+    font-size:clamp(15px, 1.6vw, 19px);
+    color:var(--gray);letter-spacing:0;
+  }
+  .serv-row .price{
+    font-family:var(--f-display);font-weight:400;
+    font-size:clamp(24px, 3vw, 40px);
+    color:var(--olive-bright);letter-spacing:-.02em;white-space:nowrap;
+  }
+  .serv-row .go{
+    width:46px;height:46px;flex:0 0 46px;
+    border:1px solid var(--carbon-line-strong);border-radius:50%;
+    display:grid;place-items:center;color:var(--white);
+    transition:background .3s ease,color .3s ease,border-color .3s ease,transform .3s ease;
+  }
+  .serv-row:hover .go{background:var(--olive-bright);color:#0e0e0e;border-color:var(--olive-bright);transform:rotate(-45deg)}
+  .serv-row .go svg{width:18px;height:18px}
+  .serv-foot{
+    margin-top:clamp(36px, 5vw, 56px);
+    font-family:var(--f-mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gray);
+  }
+  @media (max-width:720px){
+    .serv-row{grid-template-columns:auto 1fr auto;gap:16px 20px}
+    .serv-row .name{font-size:30px}
+    .serv-row .go{display:none}
+    .serv-row .name{grid-column:2 / 4}
+    .serv-row .num{grid-row:1}
+  }
+
+  /* ---------- NUESTRO LOCAL ---------- */
+  .local{background:var(--carbon-mid)}
+  .local .media{
+    display:grid;grid-template-columns:5fr 7fr;gap:clamp(16px, 2vw, 32px);
+  }
+  @media (max-width:900px){.local .media{grid-template-columns:1fr}}
+  .local .photo, .local .vid{
+    position:relative;overflow:hidden;
+    background:var(--carbon-soft);
+    border:1px solid var(--carbon-line);
+  }
+  .local .photo{aspect-ratio:4/5}
+  .local .vid{aspect-ratio:16/10}
+  .local .photo img, .local .vid video{
+    width:100%;height:100%;object-fit:cover;
+    transition:transform 1.6s cubic-bezier(.2,.7,.2,1);
+  }
+  .local .photo:hover img{transform:scale(1.03)}
+  .local .caption{
+    position:absolute;bottom:0;left:0;right:0;
+    padding:24px 28px;
+    background:linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,0));
+    color:var(--white);
+    font-family:var(--f-mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  .local .caption .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--olive-bright);box-shadow:0 0 8px var(--olive-bright);animation:livePulse 2s ease-in-out infinite}
+  @keyframes livePulse{0%,100%{opacity:.6}50%{opacity:1}}
+  .local .strip{
+    margin-top:clamp(48px, 6vw, 80px);
+    display:flex;flex-wrap:wrap;gap:16px 40px;
+    padding-top:32px;border-top:1px solid var(--carbon-line);
+    font-family:var(--f-mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gray);
+  }
+  .local .strip span{display:inline-flex;align-items:center;gap:12px}
+  .local .strip span:not(:last-child)::after{content:"";width:4px;height:4px;background:var(--olive);transform:rotate(45deg)}
+
+  /* ---------- RESEÑAS ---------- */
+  .resenas .quotes{
+    display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  }
+  @media (max-width:880px){.resenas .quotes{grid-template-columns:1fr}}
+  .quote{
+    padding:clamp(32px, 4vw, 48px);
+    border:1px solid var(--carbon-line);
+    background:var(--carbon-mid);
+  }
+  .quote .stars{color:var(--olive-bright);letter-spacing:.18em;font-size:15px;display:block;margin-bottom:24px}
+  .quote blockquote{
+    margin:0 0 24px;
+    font-family:var(--f-body);font-weight:400;
+    font-size:clamp(15px, 1.4vw, 17px);line-height:1.65;color:var(--white-soft);letter-spacing:0;
+  }
+  .quote .who{
+    font-family:var(--f-body);font-weight:600;font-size:15px;color:var(--white);letter-spacing:.01em;
+  }
+  .resenas .ratings{
+    display:flex;flex-wrap:wrap;gap:36px;align-items:baseline;justify-content:center;
+    margin-top:clamp(40px,5vw,64px);color:var(--gray);font-family:var(--f-mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  }
+  .resenas .ratings b{
+    color:var(--white);font-family:var(--f-display);font-weight:500;font-size:24px;
+    letter-spacing:-.01em;text-transform:none;margin-right:6px;
+  }
+
+  /* ---------- CONTACTO ---------- */
+  .contacto{
+    padding:var(--pad-y) var(--pad-x);
+    border-top:1px solid var(--carbon-line);
+    background:var(--carbon);
+  }
+  .contacto .head{
+    display:flex;flex-direction:column;align-items:center;text-align:center;
+    margin-bottom:clamp(48px, 6vw, 80px);
+  }
+  .contacto .head .eyebrow{margin-bottom:22px}
+  .contacto .head .eyebrow::before{display:none}
+  .contacto .head h2{margin:0;font-size:clamp(40px, 5.5vw, 84px)}
+  .contacto .head .divider{width:60px;height:1px;background:var(--olive-muted);margin-top:28px}
+  .contacto .grid{
+    display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(40px, 6vw, 88px);
+    align-items:center;max-width:1240px;margin:0 auto;
+  }
+  @media (max-width:900px){.contacto .grid{grid-template-columns:1fr;gap:48px}}
+  .contacto .info{display:flex;flex-direction:column;gap:clamp(28px, 3.4vw, 42px)}
+  .cinfo{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start}
+  .cinfo .ic{width:30px;height:30px;flex:0 0 30px;color:var(--olive);margin-top:3px}
+  .cinfo .ic svg{width:26px;height:26px}
+  .cinfo .lbl{font-family:var(--f-display);font-weight:500;font-size:21px;color:var(--white);letter-spacing:-.005em;margin-bottom:8px}
+  .cinfo .val{color:var(--gray);font-size:16px;line-height:1.65}
+  .cinfo a.val{color:var(--olive-bright);transition:color .2s ease}
+  .cinfo a.val:hover{color:var(--olive-soft)}
+  .cinfo .maplink{
+    display:inline-flex;align-items:center;gap:8px;margin-top:12px;
+    color:var(--olive);font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    border-bottom:1px solid var(--olive-muted);padding-bottom:3px;transition:color .2s ease,border-color .2s ease;
+  }
+  .cinfo .maplink:hover{color:var(--olive-bright);border-color:var(--olive-bright)}
+  .contacto .socials{display:flex;gap:22px;align-items:center;margin-top:4px}
+  .contacto .socials a{color:var(--gray);transition:color .25s ease,transform .25s ease}
+  .contacto .socials a:hover{color:var(--olive-bright);transform:translateY(-2px)}
+  .contacto .socials svg{width:23px;height:23px}
+  .contacto .map{
+    position:relative;aspect-ratio:16/12;background:var(--carbon-soft);
+    border:1px solid var(--carbon-line);overflow:hidden;
+  }
+  .contacto .map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  @media (max-width:900px){.contacto .map{aspect-ratio:4/3}}
+
+  /* ---------- Footer ---------- */
+  footer{
+    padding:48px var(--pad-x) 36px;
+    background:var(--carbon);
+    border-top:1px solid var(--carbon-line);
+    color:var(--gray);
+  }
+  footer .legal{
+    display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+    font-family:var(--f-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gray-dim);
+  }
+  footer .legal .name{font-family:var(--f-display);color:var(--white-soft);font-size:16px;letter-spacing:.04em}
+
+  /* ---------- Floating WhatsApp ---------- */
+  .fab{
+    position:fixed;right:20px;bottom:20px;z-index:60;
+    width:56px;height:56px;border-radius:50%;
+    background:var(--olive-bright);color:#0e0e0e;
+    display:grid;place-items:center;
+    box-shadow:0 20px 40px -10px rgba(201,201,106,.5);
+    transition:transform .25s ease, background .25s ease;
+  }
+  .fab:hover{transform:translateY(-3px) scale(1.05);background:var(--olive-soft)}
+  .fab svg{width:26px;height:26px}
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.01ms !important; transition-duration:.01ms !important}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ TOPBAR ============ -->
+<header class="topbar" id="topbar">
+  <a class="tb-brand" href="#top">
+    <img src="assets/logo.jpg" alt="">
+    <span>Barberisimo</span>
+  </a>
+  <nav class="tb-right">
+    <a href="#top">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#local">Local</a>
+    <a href="#resenas">Reseñas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" data-screen-label="01 Hero">
+  <img class="logo" id="hero-logo" src="assets/logo.jpg" alt="Logo Barberisimo">
+  <h1 class="h-display">
+    <span class="word" id="hero-w1">Barberi</span><span class="word" id="hero-w2">simo</span>
+  </h1>
+  <div class="ctas">
+    <a class="btn" id="hero-cta" href="https://wa.me/523327674349?text=Hola%20Gabo%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">
+      <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      Agendar por WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- ============ FRASE DEL NEGOCIO ============ -->
+<section class="frase" data-screen-label="02 Frase">
+  <span class="eyebrow" id="frase-eyebrow">Quiénes somos</span>
+  <p id="frase-text">Barbería especializada. Cortes modernos a tijera, alineado de barba, afeitado con aromaterapia, vapor y toalla, y masajes anti‑estrés de 15, 30 y 45 min en silla shiatsu. <em>Garantía de servicios profesionales.</em></p>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="section servicios" id="servicios" data-screen-label="03 Servicios">
+  <div class="section-num">03 / Servicios</div>
+  <div class="head">
+    <span class="eyebrow">Lo que ofrecemos</span>
+    <h2 class="h-display">Nuestros Servicios</h2>
+    <span class="divider"></span>
+  </div>
+
+  <div class="serv-list">
+    <a class="serv-row" href="https://wa.me/523327674349?text=Hola%20Gabo%2C%20quiero%20agendar%20un%20Corte" target="_blank" rel="noopener">
+      <span class="num">01</span>
+      <span class="name">Corte <span class="desc">a la medida de tu estilo</span></span>
+      <span class="price">$289</span>
+      <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+    <a class="serv-row" href="https://wa.me/523327674349?text=Hola%20Gabo%2C%20quiero%20agendar%20una%20Barba" target="_blank" rel="noopener">
+      <span class="num">02</span>
+      <span class="name">Barba <span class="desc">recorte, vapor y aromaterapia</span></span>
+      <span class="price">$289</span>
+      <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+    <a class="serv-row" href="https://wa.me/523327674349?text=Hola%20Gabo%2C%20quiero%20agendar%20una%20Barba%203M" target="_blank" rel="noopener">
+      <span class="num">03</span>
+      <span class="name">Barba 3M <span class="desc">toalla caliente y fría, para barbas densas</span></span>
+      <span class="price">$349</span>
+      <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+    </a>
+  </div>
+  <p class="serv-foot">Toca un servicio para agendar por WhatsApp</p>
+</section>
+
+<!-- ============ NUESTRO LOCAL ============ -->
+<section class="section local" id="local" data-screen-label="04 Local">
+  <div class="section-num">04 / Local</div>
+  <div class="head">
+    <span class="eyebrow">Conócenos</span>
+    <h2 class="h-display">Nuestro Local</h2>
+    <span class="divider"></span>
+  </div>
+
+  <div class="media">
+    <figure class="photo">
+      <img src="assets/fachada.webp" alt="Fachada de Barberisimo, Cd del Sol, Zapopan" loading="lazy">
+    </figure>
+    <figure class="vid">
+      <video src="assets/local.mp4" autoplay muted loop playsinline preload="metadata"></video>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ RESEÑAS ============ -->
+<section class="section resenas" id="resenas" data-screen-label="05 Reseñas">
+  <div class="section-num">05 / Reseñas</div>
+  <div class="head">
+    <span class="eyebrow">Testimonios</span>
+    <h2 class="h-display">Reseñas</h2>
+    <span class="divider"></span>
+  </div>
+
+  <div class="quotes">
+    <div class="quote">
+      <div class="stars">★★★★★</div>
+      <blockquote>No es solo un barbero, es parte de mi rutina desde hace más de seis años.</blockquote>
+      <div class="who">Roberto Franco</div>
+    </div>
+    <div class="quote">
+      <div class="stars">★★★★★</div>
+      <blockquote>Llevo doce años cortándome el cabello con Gabo.</blockquote>
+      <div class="who">Giovanni Tourne</div>
+    </div>
+    <div class="quote">
+      <div class="stars">★★★★★</div>
+      <blockquote>Sabe recomendar si buscas algo diferente. Además sabe cortar a pura tijera.</blockquote>
+      <div class="who">Oscar Topete</div>
+    </div>
+    <div class="quote">
+      <div class="stars">★★★★★</div>
+      <blockquote>Good music, excellent service, great atmosphere — you’ll get so relaxed.</blockquote>
+      <div class="who">Albert Moon</div>
+    </div>
+  </div>
+
+  <div class="ratings">
+    <span><b>5.0</b> Google · 8 reseñas</span>
+    <span><b>5.0</b> Facebook</span>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="contacto" id="contacto" data-screen-label="06 Contacto">
+  <div class="head">
+    <span class="eyebrow">Encuéntranos</span>
+    <h2 class="h-display">Contacto</h2>
+    <span class="divider"></span>
+  </div>
+
+  <div class="grid">
+    <div class="info">
+      <div class="cinfo">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <div>
+          <div class="lbl">Dirección</div>
+          <div class="val">Av. Netzahualcóyotl 410-4,<br>Cd del Sol, 45050<br>Zapopan, Jal.</div>
+          <a class="maplink" href="https://maps.app.goo.gl/bTu1Bq9VwmhsEJw2A" target="_blank" rel="noopener">Cómo llegar
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="cinfo">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></span>
+        <div>
+          <div class="lbl">WhatsApp</div>
+          <a class="val" href="https://wa.me/523327674349?text=Hola%20Gabo%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener">+52 33 2767 4349</a>
+        </div>
+      </div>
+
+      <div class="cinfo">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.94.32 1.86.57 2.75a2 2 0 0 1-.45 2.11L8 9.91a16 16 0 0 0 6 6l1.33-1.33a2 2 0 0 1 2.11-.45c.89.25 1.81.44 2.75.57A2 2 0 0 1 22 16.92Z"/></svg></span>
+        <div>
+          <div class="lbl">Teléfono</div>
+          <a class="val" href="tel:+523327674349">+52 33 2767 4349</a>
+        </div>
+      </div>
+
+      <div class="cinfo">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></svg></span>
+        <div>
+          <div class="lbl">Horarios</div>
+          <div class="val">Lun – Vie · 10:15 – 19:45<br>Sábado · 10:15 – 17:00<br>Domingo · solo con reserva</div>
+        </div>
+      </div>
+
+      <div class="socials">
+        <a href="https://www.instagram.com/is.barberisimo/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=61584808366025" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12Z"/></svg></a>
+        <a href="https://wa.me/523327674349?text=Hola%20Gabo%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+      </div>
+    </div>
+
+    <div class="map">
+      <iframe
+        src="https://maps.google.com/maps?q=Av.%20Netzahualc%C3%B3yotl%20410-4%2C%20Cd%20del%20Sol%2C%2045050%20Zapopan%2C%20Jal.&z=16&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Barberisimo en Google Maps"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer data-screen-label="08 Footer">
+  <div class="legal">
+    <span class="name">Barberisimo</span>
+    <span>© 2026 · Zapopan, Jal. · Cortes a la medida</span>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="fab" href="https://wa.me/523327674349?text=Hola%20Gabo%2C%20quiero%20agendar%20una%20cita" target="_blank" rel="noopener" aria-label="Agendar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 0 1 8.413 3.488 11.824 11.824 0 0 1 3.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 0 1-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<!-- ============ GSAP ============ -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  // ---- Topbar scrolled state ----
+  const topbar = document.getElementById('topbar');
+  const onScroll = () => topbar.classList.toggle('scrolled', window.scrollY > 30);
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // ---- Medición de clics a WhatsApp / llamadas (listo para GA4 o Meta Pixel) ----
+  // Empuja un evento a dataLayer y, si existen, a gtag/fbq. Si no hay analítica, no hace nada.
+  window.dataLayer = window.dataLayer || [];
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href]');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    let evt = null;
+    if (href.includes('wa.me')) evt = 'whatsapp_click';
+    else if (href.startsWith('tel:')) evt = 'call_click';
+    if (!evt) return;
+    window.dataLayer.push({ event: evt, link_url: href });
+    if (typeof window.gtag === 'function') window.gtag('event', evt, { link_url: href });
+    if (typeof window.fbq === 'function') window.fbq('trackCustom', evt);
+  }, {passive:true});
+
+  // ---- Highlight today's hours ----
+  const today = new Date().getDay(); // 0 Sun, 1 Mon, ..., 6 Sat
+  let key = (today >= 1 && today <= 5) ? 1 : (today === 6 ? 6 : 0);
+  const dEl = document.querySelector(`#hours .d[data-day="${key}"]`);
+  if (dEl){
+    const now = new Date();
+    const mins = now.getHours()*60 + now.getMinutes();
+    let openSlots;
+    if (key === 1) openSlots = [[10*60+15, 14*60],[15*60, 19*60+45]];
+    else if (key === 6) openSlots = [[10*60+15, 17*60]];
+    else openSlots = [];
+    if (openSlots.some(([a,b]) => mins >= a && mins <= b)) dEl.classList.add('now');
+  }
+
+  // ---- Animations (progressive enhancement) ----
+  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero entrance
+  gsap.set('#hero-logo', {opacity:0, scale:.92, y:24});
+  gsap.set('#hero-w1, #hero-w2, #hero-cta', {opacity:0, y:24});
+
+  const tl = gsap.timeline({defaults:{ease:'power3.out'}});
+  tl.to('#hero-logo', {opacity:1, scale:1, y:0, duration:1.2})
+    .to('#hero-w1', {opacity:1, y:0, duration:1.1}, '-=.6')
+    .to('#hero-w2', {opacity:1, y:0, duration:1.1}, '-=.95')
+    .to('#hero-cta', {opacity:1, y:0, duration:.8}, '-=.55');
+
+  // Subtle parallax on hero logo
+  gsap.to('#hero-logo', {
+    yPercent:-24, ease:'none',
+    scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:true}
+  });
+
+  // Frase word-by-word feel (fade whole phrase up)
+  ['#frase-eyebrow','#frase-text'].forEach((sel,i) => {
+    gsap.set(sel,{opacity:0,y:28});
+    gsap.to(sel,{opacity:1,y:0,duration:1,ease:'power2.out',delay:i*.12,
+      scrollTrigger:{trigger:'.frase',start:'top 72%',once:true}});
+  });
+
+  // Section reveals
+  const revealTargets = [
+    '.section .head .eyebrow',
+    '.section .head h2',
+    '.section .head .divider',
+    '.serv-row',
+    '.serv-foot',
+    '.local .photo',
+    '.local .vid',
+    '.quote',
+    '.resenas .ratings',
+    '.contacto .head .eyebrow',
+    '.contacto .head h2',
+    '.contacto .head .divider',
+    '.contacto .cinfo',
+    '.contacto .socials',
+    '.contacto .map'
+  ];
+  revealTargets.forEach(sel => {
+    gsap.utils.toArray(sel).forEach(el => {
+      gsap.set(el, {opacity:0, y:28});
+      gsap.to(el, {
+        opacity:1, y:0, duration:.9, ease:'power2.out',
+        scrollTrigger:{trigger:el, start:'top 88%', once:true}
+      });
+    });
+  });
+
+  // Stagger service rows
+  ScrollTrigger.create({
+    trigger:'.serv-list', start:'top 82%', once:true,
+    onEnter: () => {
+      gsap.to('.serv-row', {opacity:1, y:0, duration:.9, ease:'power3.out', stagger:.1});
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
