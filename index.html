@@ -1050,9 +1050,11 @@
     const open = section.querySelector('.serv-cat.open .cat-body');
     if (open) open.style.maxHeight = open.querySelector('.cat-inner').scrollHeight + 'px';
     if (n > 0){
-      const lines = [...selected.entries()].map(([name, p]) => '• ' + name + ' — $' + fmt(p));
-      const msg = 'Hola, me gustaría agendar:\n' + lines.join('\n') + '\n\nTotal: $' + fmt(total);
-      goEl.href = WA + '?text=' + encodeURIComponent(msg);
+      const names = [...selected.keys()];
+      const list = names.length > 1
+        ? names.slice(0, -1).join(', ') + ' y ' + names[names.length - 1]
+        : names[0];
+      goEl.href = WA + '?text=' + encodeURIComponent('Hola, me gustaría agendar una cita para ' + list + '.');
     } else {
       goEl.href = WA + '?text=' + encodeURIComponent('Hola, me gustaría agendar una cita.');
     }
